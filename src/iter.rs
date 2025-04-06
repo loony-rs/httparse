@@ -31,7 +31,7 @@ impl<'a> Bytes<'a> {
         self.cursor as usize - self.start as usize
     }
 
-    /// 
+    /// Gives the current index of cursor.
     #[inline]
     pub fn peek(&self) -> Option<u8> {
         if self.cursor < self.end {
